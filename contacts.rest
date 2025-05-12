@@ -1,5 +1,22 @@
+### Local API Tests
+
 ### Get all contacts
 GET http://localhost:3000/contacts
 
 ### Get one contact (replace with actual ID)
 GET http://localhost:3000/contacts/PUT_CONTACT_ID_HERE
+
+### Welcome message
+GET http://localhost:3000/
+
+
+### Render API Tests (replace with your actual Render URL)
+
+### Get all contacts
+GET https://your-render-app-name.onrender.com/contacts
+
+### Get one contact (replace with actual ID)
+GET https://your-render-app-name.onrender.com/contacts/PUT_CONTACT_ID_HERE
+
+### Welcome message
+GET https://your-render-app-name.onrender.com/

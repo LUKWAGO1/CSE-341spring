@@ -7,14 +7,23 @@ if (!uri) {
 }
 
 let client;
+let db;
 
 async function connectToDatabase() {
   if (!client) {
     client = new MongoClient(uri);
     await client.connect();
     console.log('✅ Connected to MongoDB');
+    db = client.db('contacts_db'); // Specify your database name here
   }
   return client;
 }
 
-module.exports = { connectToDatabase };
+function getDb() {
+  if (!db) {
+    throw new Error('Database not initialized. Call connectToDatabase first.');
+  }
+  return db;
+}
+
+module.exports = { connectToDatabase, getDb };
