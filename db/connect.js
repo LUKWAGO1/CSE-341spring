@@ -6,7 +6,7 @@ if (!uri) {
   throw new Error('Missing MongoDB URI in environment variables.');
 }
 
-let client
+let client;
 let db;
 
 async function connectToDatabase() {
