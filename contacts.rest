@@ -4,7 +4,7 @@
 GET http://localhost:3000/contacts
 
 ### Get one contact (replace with actual ID)
-GET http://localhost:3000/contacts/"_id": "682274ddd0a5b29bade88762"
+GET http://localhost:3000/contacts/682274ddd0a5b29bade88762
 
 ### Welcome message
 GET http://localhost:3000/
@@ -13,10 +13,10 @@ GET http://localhost:3000/
 ### Render API Tests (replace with your actual Render URL)
 
 ### Get all contacts
-GET https://your-render-app-name.onrender.com/contacts
+GET https://cse-341spring.onrender.com/contacts
 
 ### Get one contact (replace with actual ID)
-GET https://your-render-app-name.onrender.com/contacts/ "_id": "682274ddd0a5b29bade88762"
+GET https://cse-341spring.onrender.com/contacts/682274ddd0a5b29bade88762
 
 ### Welcome message
-GET https://your-render-app-name.onrender.com/
+GET https://cse-341spring.onrender.com/
