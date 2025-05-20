@@ -1,16 +1,46 @@
 ### Local API Tests
 
+### Welcome message
+GET http://localhost:3000/
+
 ### Get all contacts
 GET http://localhost:3000/contacts
 
 ### Get one contact (replace with actual ID)
 GET http://localhost:3000/contacts/682274ddd0a5b29bade88762
 
-### Welcome message
-GET http://localhost:3000/
+### Create new contact
+POST http://localhost:3000/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Jane",
+  "lastName": "Smith",
+  "email": "jane.smith@example.com",
+  "favoriteColor": "purple",
+  "birthday": "1985-05-15"
+}
+
+### Update contact (replace with actual ID)
+PUT http://localhost:3000/contacts/682274ddd0a5b29bade88762
+Content-Type: application/json
+
+{
+  "firstName": "Jane",
+  "lastName": "Smith",
+  "email": "jane.updated@example.com",
+  "favoriteColor": "green",
+  "birthday": "1985-05-15"
+}
+
+### Delete contact (replace with actual ID)
+DELETE http://localhost:3000/contacts/682274ddd0a5b29bade88762
 
 
 ### Render API Tests (replace with your actual Render URL)
+
+### Welcome message
+GET https://cse-341spring.onrender.com/
 
 ### Get all contacts
 GET https://cse-341spring.onrender.com/contacts
@@ -18,5 +48,29 @@ GET https://cse-341spring.onrender.com/contacts
 ### Get one contact (replace with actual ID)
 GET https://cse-341spring.onrender.com/contacts/682274ddd0a5b29bade88762
 
-### Welcome message
-GET https://cse-341spring.onrender.com/
+### Create new contact
+POST https://cse-341spring.onrender.com/contacts
+Content-Type: application/json
+
+{
+  "firstName": "Jane",
+  "lastName": "Smith",
+  "email": "jane.smith@example.com",
+  "favoriteColor": "purple",
+  "birthday": "1985-05-15"
+}
+
+### Update contact (replace with actual ID)
+PUT https://cse-341spring.onrender.com/contacts/682274ddd0a5b29bade88762
+Content-Type: application/json
+
+{
+  "firstName": "Jane",
+  "lastName": "Smith",
+  "email": "jane.updated@example.com",
+  "favoriteColor": "green",
+  "birthday": "1985-05-15"
+}
+
+### Delete contact (replace with actual ID)
+DELETE https://cse-341spring.onrender.com/contacts/682274ddd0a5b29bade88762
