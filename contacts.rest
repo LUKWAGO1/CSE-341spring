@@ -6,7 +6,7 @@ GET http://localhost:3000/
 ### Get all contacts
 GET http://localhost:3000/contacts
 
-### Get one contact (replace with actual ID)
+### Get one contact 
 GET http://localhost:3000/contacts/682274ddd0a5b29bade88762
 
 ### Create new contact
@@ -16,9 +16,9 @@ Content-Type: application/json
 {
   "firstName": "Jane",
   "lastName": "Smith",
-  "email": "jane.smith@example.com",
+  "email": "jane.smith@gmail.com",
   "favoriteColor": "purple",
-  "birthday": "1985-05-15"
+  "birthday": "1989-05-15"
 }
 
 ### Update contact (replace with actual ID)
@@ -28,9 +28,9 @@ Content-Type: application/json
 {
   "firstName": "Jane",
   "lastName": "Smith",
-  "email": "jane.updated@example.com",
+  "email": "jane.updated@gmail.com",
   "favoriteColor": "green",
-  "birthday": "1985-05-15"
+  "birthday": "2005-05-11"
 }
 
 ### Delete contact (replace with actual ID)
@@ -55,9 +55,9 @@ Content-Type: application/json
 {
   "firstName": "Jane",
   "lastName": "Smith",
-  "email": "jane.smith@example.com",
+  "email": "jane.smith@gmail.com",
   "favoriteColor": "purple",
-  "birthday": "1985-05-15"
+  "birthday": "1975-05-15"
 }
 
 ### Update contact (replace with actual ID)
@@ -67,9 +67,9 @@ Content-Type: application/json
 {
   "firstName": "Jane",
   "lastName": "Smith",
-  "email": "jane.updated@example.com",
+  "email": "jane.updated@gmail.com",
   "favoriteColor": "green",
-  "birthday": "1985-05-15"
+  "birthday": "1995-05-15"
 }
 
 ### Delete contact (replace with actual ID)
