@@ -5,7 +5,7 @@ const doc = {
     title: 'Contacts API',
     description: 'API for managing contacts information'
   },
-  host: 'localhost:3000',
+  host: 'https://cse-341spring.onrender.com',
   schemes: ['http', 'https'],
   tags: [
     {
