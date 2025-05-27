@@ -4,10 +4,11 @@ const swaggerAutogen = require('swagger-autogen')();
 const doc = {
   info: {
     title: 'Contacts API',
-    description: 'API for managing contacts information'
+    description: 'API for managing contacts information',
+    version: '1.0.0'
   },
-  host: 'cse-341spring.onrender.com', // 
-  schemes: ['https'], // ✅ Use only "https" for production
+  host: 'cse-341spring.onrender.com', // ✅ Production URL
+  schemes: ['https'], // ✅ HTTPS for production
   tags: [
     {
       name: 'Contacts',
@@ -52,4 +53,7 @@ const outputFile = './swagger-output.json';
 const endpointsFiles = ['./server.js'];
 
 // Generate swagger.json
-swaggerAutogen(outputFile, endpointsFiles, doc);
+swaggerAutogen(outputFile, endpointsFiles, doc).then(() => {
+  console.log('✅ Swagger documentation generated successfully');
+  console.log('🔄 Remember to restart your server to see changes');
+});
